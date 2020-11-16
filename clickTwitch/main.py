@@ -1,28 +1,29 @@
-import os
-from time import sleep
+import os 
 from clickTwitch import *
+from time import sleep
 
 # Set up.
 try:
-    clickInterval = int(input('Set time in seconds the mouse will click (Default = 200): '))
-    if clickInterval >= 1:
-        print('Time setted to', clickInterval)
-        sleep(1)
-    else:
+    clickInterval = int(input('Set time in seconds the mouse will click (default = 200): '))
+    if clickInterval < 1:
         raise ValueError
 except ValueError:
     clickInterval = 200
-    print('Time set to default.')
-    sleep(2)
-
+finally:
+    os.system('cls')
+    
+wantsRandom = str(input('Do you want to make a random movement every second? Y/n: '))
+os.system('cls')
 clickTwitch.detectPosition()
 
-# Loop until window is closed.
+# Loops until window is closed.
 while True:
-    os.system('cls') # Clear terminal.
-    clickTwitch.clickPosition(clickTwitch.detectPosition.x, clickTwitch.detectPosition.y) # Disgusting parameter passing.
+    os.system('cls')
     i = 0
-    while i != clickInterval:
+    clickTwitch.clickPosition(clickTwitch.detectPosition.x, clickTwitch.detectPosition.y)
+    while i < clickInterval:
         sleep(1)
         i += 1
-        print(str(i) + 's')
+        print('%ss' % i)
+        if clickTwitch.isLetterY(wantsRandom):
+            clickTwitch.randomMovement()
