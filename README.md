@@ -1,3 +1,5 @@
+[![clickTwitch](https://github.com/samoht9277/clickTwitch/workflows/Upload%20Python%20Package/badge.svg)](https://github.com/samoht9277/clickTwitch/actions)
+
 # clickTwitch
 Made by [samoht9277](https://github.com/samoht9277)
 
