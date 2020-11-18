@@ -7,6 +7,6 @@ clickTwitch is an automation tool that claims your twitch reward while watching 
 ### How do i use it?
 Run `pip install -i https://test.pypi.org/simple/ clickTwitch`
 
-Type `import clickTwitch` to have all of the code at your disposal.
+Download main.py and run `python main.py`
 
-Download main.py and run it: `python main.py`
+Or `import clickTwitch` to have all of the code at your disposal.
