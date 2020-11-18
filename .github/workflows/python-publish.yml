@@ -2,7 +2,6 @@ name: clickTwitch
 
 on:
   workflow_dispatch:
-  release:
 
 jobs:
   deploy:
