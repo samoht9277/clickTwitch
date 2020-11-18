@@ -2,14 +2,12 @@ name: clickTwitch
 
 on:
   workflow_dispatch:
-  push:
-    branches: 
-      - master
+  release:
+
 jobs:
   deploy:
 
     runs-on: ubuntu-18.04
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
