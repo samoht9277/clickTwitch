@@ -1,3 +1,19 @@
+'''
+clickTwitch is an automation tool that claims your twitch reward while watching a stream.
+
+API:
+========
+
+`detectPosition()`
+
+`clickPosition()`
+
+`randomMovement()`
+
+`isLetterY()`
+
+'''
+
 import mouse
 
 def detectPosition():
@@ -13,14 +29,14 @@ def detectPosition():
 
 def clickPosition(x, y):
     '''
-    Moves to passed coordenate and clicks.
+    Moves to passed coordenates and clicks.
     '''
     mouse.move(x, y, absolute=True, duration=0.1) 
     mouse.click(button='left')
 
 def randomMovement():
     '''
-    Moves to random position, to prevent twitch from detecting the clicker.
+    Moves to random position.
     '''
     import random
 
@@ -30,7 +46,7 @@ def randomMovement():
 
 def isLetterY(letter):
     '''
-    Returns true is wantsRandom is equal to 'y' (yes).
+    Returns true is parameter is a string equal to 'y'.
     '''
     if letter == 'y' or letter == 'Y':
         return True

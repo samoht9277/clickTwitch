@@ -1,8 +1,2 @@
-/.vscode
-/build
-/clickTwitch.egg-info
-/dist
-
 __pycache__/
-
 *.pyc

@@ -1,4 +1,4 @@
-import subprocess 
+import subprocess
 import clickTwitch
 from time import sleep
 
