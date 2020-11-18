@@ -1,8 +1,7 @@
-name: clickTwitch
+name: publishing
 
 on:
   workflow_dispatch:
-  release:
 
 jobs:
   deploy:

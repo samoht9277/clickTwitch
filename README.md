@@ -1,7 +1,8 @@
-![clickTwitch](https://github.com/samoht9277/clickTwitch/workflows/clickTwitch/badge.svg)
-
 # clickTwitch
 Made by [samoht9277](https://github.com/samoht9277)
+
+![](https://github.com/samoht9277/clickTwitch/workflows/publishing/badge.svg)
+
 
 ### What is it?
 clickTwitch is an automation tool that claims your twitch reward while watching a stream.
