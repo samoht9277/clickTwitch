@@ -1,7 +1,7 @@
 # clickTwitch
 Made by [samoht9277](https://github.com/samoht9277)
 
-![build](https://github.com/samoht9277/clickTwitch/workflows/build/badge.svg)
+![](https://github.com/samoht9277/clickTwitch/workflows/publishing/badge.svg)
 
 
 ### What is it?
