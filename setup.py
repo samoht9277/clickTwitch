@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="clickTwitch",
-    version="1.2.0",
+    version="1.2.1",
     author="samoht9277",
     author_email="totobighouse@gmail.com",
     description="clickTwitch is an automation tool that claims your twitch reward while watching a stream",
