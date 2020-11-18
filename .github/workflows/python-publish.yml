@@ -6,12 +6,18 @@ on:
 jobs:
   deploy:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
-    - name: Build and publish
+    - uses: actions/checkout@master
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    
+    - name: Package and Upload
       env:
-        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
-        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_APIKEY }}
       run: |
-        python setup.py sdist bdist_wheel
+        python setup.py bdist_wheel
         twine upload dist/*
