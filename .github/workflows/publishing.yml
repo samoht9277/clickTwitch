@@ -1,4 +1,4 @@
-name: build
+name: publishing
 
 on:
   workflow_dispatch:
