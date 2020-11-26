@@ -24,6 +24,6 @@ while True:
     while i < clickInterval:
         sleep(1)
         i += 1
-        print('%ss' % i)
+        print('%is' % i)
         if clickTwitch.isLetterY(wantsRandom):
             clickTwitch.randomMovement()

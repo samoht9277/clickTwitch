@@ -48,6 +48,7 @@ def isLetterY(letter):
     '''
     Returns true is parameter is a string equal to 'y'.
     '''
-    if letter == 'y' or letter == 'Y':
+    letter.lower()
+    if letter == 'y':
         return True
     return False
